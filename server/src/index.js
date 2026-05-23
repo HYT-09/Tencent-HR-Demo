@@ -1,4 +1,4 @@
-require('dotenv').config();
+try { require('dotenv').config(); } catch(e) { /* 云端通过环境变量注入，无需 .env 文件 */ }
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
