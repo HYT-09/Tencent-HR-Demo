@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HR工作台</title>
+  <link rel="stylesheet" href="../styles/app.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body style="margin: 0; padding: 20px; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);">
+  <div class="phone-frame">
+    <div class="dynamic-island"></div>
+
+    <!-- Status Bar -->
+    <div class="status-bar">
+      <span class="status-bar-time">9:41</span>
+      <div class="status-bar-icons">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C7.46 3 3.34 4.78.29 7.67c-.18.18-.29.43-.29.71 0 .28.11.53.29.71l11.29 11.29c.19.19.44.29.71.29.28 0 .53-.11.71-.29L23.71 9.09c.18-.18.29-.43.29-.71 0-.28-.11-.53-.29-.71C20.66 4.78 16.54 3 12 3z"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17 4h-3V2h-4v2H7v18h10V4zm-4 16h-2v-2h2v2zm0-4h-2V9h2v7z"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17 4h-3V2h-4v2H7v18h10V4zm-4 16h-2v-2h2v2zm0-4h-2V9h2v7z"/></svg>
+      </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="nav-bar" style="background: #1a1a2e;">
+      <div class="nav-bar-left" style="color: white;">
+        <i class="fas fa-bell"></i>
+        <span class="badge" style="position: absolute; top: 8px; left: 40px;">3</span>
+      </div>
+      <span class="nav-bar-title" style="color: white;">HR工作台</span>
+      <div class="nav-bar-right" style="color: white;">
+        <i class="fas fa-search"></i>
+      </div>
+    </div>
+
+    <!-- Screen Content -->
+    <div class="screen-content" style="background: #F2F3F5;">
+
+      <!-- Welcome Header -->
+      <div style="background: linear-gradient(135deg, #1a1a2e 0%, #2A5CFF 100%); padding: 20px 16px 24px;">
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&h=100&fit=crop&crop=face" style="width: 52px; height: 52px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.3); object-fit: cover;" alt="HR Avatar">
+          <div style="color: white;">
+            <h2 style="font-size: 18px; font-weight: 600; margin-bottom: 2px;">李经理</h2>
+            <p style="font-size: 12px; opacity: 0.8;">技术工程事业群 · 前端团队</p>
+          </div>
+        </div>
+
+        <!-- Stats Cards -->
+        <div style="display: flex; gap: 10px;">
+          <div style="flex: 1; background: rgba(255,255,255,0.15); border-radius: 12px; padding: 12px; text-align: center;">
+            <div style="font-size: 24px; font-weight: 700; color: white;">128</div>
+            <div style="font-size: 11px; color: rgba(255,255,255,0.8);">投递总数</div>
+          </div>
+          <div style="flex: 1; background: rgba(255,255,255,0.15); border-radius: 12px; padding: 12px; text-align: center;">
+            <div style="font-size: 24px; font-weight: 700; color: #34D359;">45</div>
+            <div style="font-size: 11px; color: rgba(255,255,255,0.8);">已查看</div>
+          </div>
+          <div style="flex: 1; background: rgba(255,255,255,0.15); border-radius: 12px; padding: 12px; text-align: center;">
+            <div style="font-size: 24px; font-weight: 700; color: #FF9500;">18</div>
+            <div style="font-size: 11px; color: rgba(255,255,255,0.8);">待处理</div>
+          </div>
+          <div style="flex: 1; background: rgba(255,255,255,0.15); border-radius: 12px; padding: 12px; text-align: center;">
+            <div style="font-size: 24px; font-weight: 700; color: #FF3B30;">12</div>
+            <div style="font-size: 11px; color: rgba(255,255,255,0.8);">已拒绝</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Actions -->
+      <div style="margin: -10px 16px 16px; background: white; border-radius: 16px; padding: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+        <div style="display: flex; justify-content: space-around;">
+          <div style="text-align: center; cursor: pointer;">
+            <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #2A5CFF, #5B7FFF); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 6px; box-shadow: 0 4px 12px rgba(42, 92, 255, 0.3);">
+              <i class="fas fa-user-clock" style="color: white; font-size: 20px;"></i>
+            </div>
+            <span style="font-size: 12px; color: #374151; font-weight: 500;">待处理</span>
+            <span class="badge" style="display: block; margin-top: 2px;">18</span>
+          </div>
+          <div style="text-align: center; cursor: pointer;">
+            <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #34C759, #30D158); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 6px; box-shadow: 0 4px 12px rgba(52, 199, 89, 0.3);">
+              <i class="fas fa-calendar-check" style="color: white; font-size: 20px;"></i>
+            </div>
+            <span style="font-size: 12px; color: #374151; font-weight: 500;">已邀约</span>
+            <span style="display: block; margin-top: 2px; font-size: 11px; color: #34C759;">8人</span>
+          </div>
+          <div style="text-align: center; cursor: pointer;">
+            <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #FF9500, #FFB340); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 6px; box-shadow: 0 4px 12px rgba(255, 149, 0, 0.3);">
+              <i class="fas fa-users-cog" style="color: white; font-size: 20px;"></i>
+            </div>
+            <span style="font-size: 12px; color: #374151; font-weight: 500;">回捞池</span>
+            <span style="display: block; margin-top: 2px; font-size: 11px; color: #FF9500;">156人</span>
+          </div>
+          <div style="text-align: center; cursor: pointer;">
+            <div style="width: 50px; height: 50px; background: linear-gradient(135deg, #2A5CFF, #5B7FFF); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 6px; box-shadow: 0 4px 12px rgba(42, 92, 255, 0.3);">
+              <i class="fas fa-chart-bar" style="color: white; font-size: 20px;"></i>
+            </div>
+            <span style="font-size: 12px; color: #374151; font-weight: 500;">数据看板</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- High Match Candidates -->
+      <div style="padding: 0 16px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+          <h3 style="font-size: 16px; font-weight: 600; color: #1a1a1a;">
+            <i class="fas fa-fire" style="color: #2A5CFF; margin-right: 6px;"></i>高匹配候选人
+            <span style="font-size: 12px; color: #2A5CFF; font-weight: 500; margin-left: 4px;">A级以上</span>
+          </h3>
+          <span style="font-size: 13px; color: #2A5CFF; font-weight: 500;">查看全部 <i class="fas fa-chevron-right" style="font-size: 10px;"></i></span>
+        </div>
+
+        <!-- Candidate Card 1 -->
+        <div style="background: white; border-radius: 16px; padding: 16px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); border-left: 4px solid #2A5CFF;">
+          <div style="display: flex; gap: 12px; margin-bottom: 12px;">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" style="width: 50px; height: 50px; border-radius: 12px; object-fit: cover;" alt="Candidate">
+            <div style="flex: 1;">
+              <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 2px;">
+                <span style="font-size: 16px; font-weight: 600; color: #1a1a1a;">王同学</span>
+                <span class="match-tag match-tag-s">S级</span>
+                <span class="status-pill status-pill-success" style="font-size: 10px;">可立即面试</span>
+              </div>
+              <p style="font-size: 12px; color: #6B7280; margin-bottom: 4px;">北京大学 · 计算机科学与技术 · 本科</p>
+              <div style="display: flex; gap: 6px;">
+                <span style="padding: 2px 6px; background: #F0F4FF; border-radius: 4px; font-size: 10px; color: #2A5CFF;">React</span>
+                <span style="padding: 2px 6px; background: #F0F4FF; border-radius: 4px; font-size: 10px; color: #2A5CFF;">TypeScript</span>
+                <span style="padding: 2px 6px; background: #F0F4FF; border-radius: 4px; font-size: 10px; color: #2A5CFF;">Vue</span>
+              </div>
+            </div>
+            <div style="text-align: right;">
+              <div style="font-size: 22px; font-weight: 700; color: #34C759;">92%</div>
+              <div style="font-size: 10px; color: #9CA3AF;">匹配度</div>
+            </div>
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 12px; border-top: 1px solid #F2F3F5;">
+            <span style="font-size: 12px; color: #9CA3AF;"><i class="fas fa-clock"></i> 投递于 2小时前</span>
+            <div style="display: flex; gap: 8px;">
+              <button style="padding: 8px 16px; background: #34C759; color: white; border: none; border-radius: 8px; font-size: 12px; font-weight: 600; cursor: pointer;">
+                <i class="fas fa-calendar-plus"></i> 发起邀约
+              </button>
+              <button style="padding: 8px 12px; background: #F3F4F6; color: #6B7280; border: none; border-radius: 8px; font-size: 12px; font-weight: 500; cursor: pointer;">
+                查看详情
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Candidate Card 2 -->
+        <div style="background: white; border-radius: 16px; padding: 16px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); border-left: 4px solid #FF9500;">
+          <div style="display: flex; gap: 12px; margin-bottom: 12px;">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face" style="width: 50px; height: 50px; border-radius: 12px; object-fit: cover;" alt="Candidate">
+            <div style="flex: 1;">
+              <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 2px;">
+                <span style="font-size: 16px; font-weight: 600; color: #1a1a1a;">刘同学</span>
+                <span class="match-tag match-tag-a">A级</span>
+                <span class="status-pill status-pill-warning" style="font-size: 10px;">待确认</span>
+              </div>
+              <p style="font-size: 12px; color: #6B7280; margin-bottom: 4px;">清华大学 · 软件工程 · 硕士</p>
+              <div style="display: flex; gap: 6px;">
+                <span style="padding: 2px 6px; background: #F0FFF4; border-radius: 4px; font-size: 10px; color: #34C759;">Node.js</span>
+                <span style="padding: 2px 6px; background: #F0FFF4; border-radius: 4px; font-size: 10px; color: #34C759;">Python</span>
+              </div>
+            </div>
+            <div style="text-align: right;">
+              <div style="font-size: 22px; font-weight: 700; color: #34C759;">87%</div>
+              <div style="font-size: 10px; color: #9CA3AF;">匹配度</div>
+            </div>
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 12px; border-top: 1px solid #F2F3F5;">
+            <span style="font-size: 12px; color: #9CA3AF;"><i class="fas fa-clock"></i> 投递于 5小时前</span>
+            <div style="display: flex; gap: 8px;">
+              <button style="padding: 8px 16px; background: #34C759; color: white; border: none; border-radius: 8px; font-size: 12px; font-weight: 600; cursor: pointer;">
+                <i class="fas fa-calendar-plus"></i> 发起邀约
+              </button>
+              <button style="padding: 8px 12px; background: #F3F4F6; color: #6B7280; border: none; border-radius: 8px; font-size: 12px; font-weight: 500; cursor: pointer;">
+                查看详情
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recent Activity -->
+        <div style="margin-top: 8px; margin-bottom: 20px;">
+          <h3 style="font-size: 16px; font-weight: 600; color: #1a1a1a; margin-bottom: 12px;">
+            <i class="fas fa-history" style="color: #2A5CFF; margin-right: 6px;"></i>最近操作
+          </h3>
+
+          <div class="card" style="margin: 0; padding: 0; overflow: hidden;">
+            <div class="list-item" style="border-bottom: 0.5px solid #F2F3F5;">
+              <div style="width: 36px; height: 36px; background: #E8F8ED; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-right: 10px;">
+                <i class="fas fa-calendar-check" style="color: #34C759; font-size: 14px;"></i>
+              </div>
+              <div class="list-item-content">
+                <div class="list-item-title">发送面试邀约</div>
+                <div class="list-item-subtitle">前端开发工程师 - 张同学 · 5分钟前</div>
+              </div>
+            </div>
+            <div class="list-item" style="border-bottom: 0.5px solid #F2F3F5;">
+              <div style="width: 36px; height: 36px; background: #FFF3E6; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-right: 10px;">
+                <i class="fas fa-user-minus" style="color: #FF9500; font-size: 14px;"></i>
+              </div>
+              <div class="list-item-content">
+                <div class="list-item-title">标记为不合适</div>
+                <div class="list-item-subtitle">产品经理 - 李同学 · 30分钟前</div>
+              </div>
+            </div>
+            <div class="list-item">
+              <div style="width: 36px; height: 36px; background: #F0F4FF; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-right: 10px;">
+                <i class="fas fa-eye" style="color: #2A5CFF; font-size: 14px;"></i>
+              </div>
+              <div class="list-item-content">
+                <div class="list-item-title">查看了简历</div>
+                <div class="list-item-subtitle">AI算法工程师 - 王同学 · 1小时前</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="height: 20px;"></div>
+    </div>
+
+    <!-- Tab Bar -->
+    <div class="tab-bar" style="background: #1a1a2e; border-top: none;">
+      <div class="tab-item active" style="color: #2A5CFF;">
+        <i class="fas fa-home"></i>
+        <span>工作台</span>
+      </div>
+      <div class="tab-item" style="color: #9CA3AF;">
+        <i class="fas fa-users"></i>
+        <span>候选人</span>
+      </div>
+      <div class="tab-item" style="color: #9CA3AF;">
+        <i class="fas fa-briefcase"></i>
+        <span>岗位</span>
+      </div>
+      <div class="tab-item" style="color: #9CA3AF;">
+        <i class="fas fa-user-minus"></i>
+        <span>回捞</span>
+      </div>
+      <div class="tab-item" style="color: #9CA3AF;">
+        <i class="fas fa-user"></i>
+        <span>我的</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { -webkit-tap-highlight-color: transparent; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .safe-top { padding-top: env(safe-area-inset-top); }
+  .safe-bottom { padding-bottom: env(safe-area-inset-bottom); }
+  
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-xl rounded-2xl shadow-sm border border-white/60;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-500 text-white font-semibold rounded-xl px-6 py-3 
+    active:scale-[0.97] transition-all duration-150 shadow-lg shadow-primary-500/25
+    hover:bg-primary-600 disabled:opacity-50 disabled:pointer-events-none;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-primary-500 text-primary-500 font-semibold rounded-xl px-6 py-3
+    active:scale-[0.97] transition-all duration-150 hover:bg-primary-50;
+  }
+  
+  .match-badge-s { @apply bg-primary-500 text-white text-xs font-bold px-2 py-0.5 rounded-md; }
+  .match-badge-a { @apply bg-green-500 text-white text-xs font-bold px-2 py-0.5 rounded-md; }
+  .match-badge-b { @apply bg-orange-500 text-white text-xs font-bold px-2 py-0.5 rounded-md; }
+  .match-badge-c { @apply bg-gray-400 text-white text-xs font-bold px-2 py-0.5 rounded-md; }
+  
+  .status-applied { @apply bg-blue-100 text-blue-700; }
+  .status-invited { @apply bg-green-100 text-green-700; }
+  .status-interviewed { @apply bg-purple-100 text-purple-700; }
+  .status-rejected { @apply bg-red-100 text-red-700; }
+  .status-offered { @apply bg-primary-100 text-primary-700; }
+  
+  .tab-bar {
+    @apply fixed bottom-0 left-0 right-0 bg-white/90 backdrop-blur-xl border-t border-gray-100 
+    flex items-center justify-around safe-bottom z-50;
+    padding-bottom: max(env(safe-area-inset-bottom), 8px);
+  }
+  
+  .page-container {
+    @apply min-h-screen pb-20;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-200 hover:shadow-md active:scale-[0.99];
+  }
+}

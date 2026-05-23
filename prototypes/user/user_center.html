@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的</title>
+  <link rel="stylesheet" href="../styles/app.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body style="margin: 0; padding: 20px; background: transparent;">
+  <div class="phone-frame">
+    <div class="dynamic-island"></div>
+
+    <!-- Status Bar -->
+    <div class="status-bar">
+      <span class="status-bar-time">9:41</span>
+      <div class="status-bar-icons">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C7.46 3 3.34 4.78.29 7.67c-.18.18-.29.43-.29.71 0 .28.11.53.29.71l11.29 11.29c.19.19.44.29.71.29.28 0 .53-.11.71-.29L23.71 9.09c.18-.18.29-.43.29-.71 0-.28-.11-.53-.29-.71C20.66 4.78 16.54 3 12 3z"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17 4h-3V2h-4v2H7v18h10V4zm-4 16h-2v-2h2v2zm0-4h-2V9h2v7z"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17 4h-3V2h-4v2H7v18h10V4zm-4 16h-2v-2h2v2zm0-4h-2V9h2v7z"/></svg>
+      </div>
+    </div>
+
+    <!-- Screen Content -->
+    <div class="screen-content" style="background: #F8F9FA;">
+
+      <!-- Profile Header -->
+      <div style="background: linear-gradient(135deg, #2A5CFF, #5B7FFF); padding: 20px 16px 30px;">
+        <div style="display: flex; align-items: center; gap: 14px;">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" style="width: 64px; height: 64px; border-radius: 50%; border: 3px solid rgba(255,255,255,0.3); object-fit: cover;" alt="Avatar">
+          <div style="flex: 1; color: white;">
+            <h2 style="font-size: 20px; font-weight: 700; margin-bottom: 2px;">张三</h2>
+            <p style="font-size: 13px; opacity: 0.9;">北京大学 · 计算机科学与技术</p>
+          </div>
+          <button style="padding: 8px 16px; background: rgba(255,255,255,0.2); border: none; border-radius: 20px; color: white; font-size: 13px; font-weight: 500; cursor: pointer;">
+            编辑简历
+          </button>
+        </div>
+
+        <!-- Stats Row -->
+        <div style="display: flex; justify-content: space-around; margin-top: 20px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.2);">
+          <div style="text-align: center;">
+            <div style="font-size: 22px; font-weight: 700;">5</div>
+            <div style="font-size: 11px; opacity: 0.8;">已投递</div>
+          </div>
+          <div style="text-align: center;">
+            <div style="font-size: 22px; font-weight: 700;">2</div>
+            <div style="font-size: 11px; opacity: 0.8;">已获邀</div>
+          </div>
+          <div style="text-align: center;">
+            <div style="font-size: 22px; font-weight: 700;">1</div>
+            <div style="font-size: 11px; opacity: 0.8;">已拒绝</div>
+          </div>
+          <div style="text-align: center;">
+            <div style="font-size: 22px; font-weight: 700;">3</div>
+            <div style="font-size: 11px; opacity: 0.8;">匹配中</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Actions -->
+      <div style="margin: -20px 16px 16px; background: white; border-radius: 16px; padding: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+        <div style="display: flex; justify-content: space-around;">
+          <div style="text-align: center; cursor: pointer;">
+            <div style="width: 48px; height: 48px; background: #F0F4FF; border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 6px;">
+              <i class="fas fa-cloud-upload-alt" style="color: #2A5CFF; font-size: 20px;"></i>
+            </div>
+            <span style="font-size: 12px; color: #374151;">上传简历</span>
+          </div>
+          <div style="text-align: center; cursor: pointer;">
+            <div style="width: 48px; height: 48px; background: #F0F4FF; border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 6px;">
+              <i class="fas fa-file-alt" style="color: #2A5CFF; font-size: 20px;"></i>
+            </div>
+            <span style="font-size: 12px; color: #374151;">我的简历</span>
+          </div>
+          <div style="text-align: center; cursor: pointer;">
+            <div style="width: 48px; height: 48px; background: #FFF9E6; border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 6px;">
+              <i class="fas fa-star" style="color: #FF9500; font-size: 20px;"></i>
+            </div>
+            <span style="font-size: 12px; color: #374151;">我的收藏</span>
+          </div>
+          <div style="text-align: center; cursor: pointer;">
+            <div style="width: 48px; height: 48px; background: #F0FFF4; border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 6px;">
+              <i class="fas fa-history" style="color: #34C759; font-size: 20px;"></i>
+            </div>
+            <span style="font-size: 12px; color: #374151;">投递记录</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu List -->
+      <div style="margin: 0 16px;">
+        <div class="card" style="margin: 0 0 12px; padding: 0; overflow: hidden;">
+          <!-- Job Progress -->
+          <div class="list-item" style="border-bottom: 0.5px solid #F2F3F5;">
+            <div class="list-item-icon" style="background: linear-gradient(135deg, #2A5CFF, #5B7FFF);">
+              <i class="fas fa-chart-line" style="color: white;"></i>
+            </div>
+            <div class="list-item-content">
+              <div class="list-item-title">求职进度看板</div>
+              <div class="list-item-subtitle">实时追踪所有投递岗位状态</div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 6px;">
+              <span class="badge">5</span>
+              <i class="fas fa-chevron-right list-item-arrow"></i>
+            </div>
+          </div>
+
+          <!-- Interview Invitations -->
+          <div class="list-item" style="border-bottom: 0.5px solid #F2F3F5;">
+            <div class="list-item-icon" style="background: linear-gradient(135deg, #34C759, #30D158);">
+              <i class="fas fa-calendar-check" style="color: white;"></i>
+            </div>
+            <div class="list-item-content">
+              <div class="list-item-title">面试邀约</div>
+              <div class="list-item-subtitle">待确认 2 场面试</div>
+            </div>
+            <span class="status-pill status-pill-warning" style="margin-right: 8px;">待确认</span>
+            <i class="fas fa-chevron-right list-item-arrow"></i>
+          </div>
+
+          <!-- Resume Management -->
+          <div class="list-item">
+            <div class="list-item-icon" style="background: linear-gradient(135deg, #2A5CFF, #5B7FFF);">
+              <i class="fas fa-id-card" style="color: white;"></i>
+            </div>
+            <div class="list-item-content">
+              <div class="list-item-title">简历管理</div>
+              <div class="list-item-subtitle">已保存 2 份简历</div>
+            </div>
+            <i class="fas fa-chevron-right list-item-arrow"></i>
+          </div>
+        </div>
+
+        <div class="card" style="margin: 0 0 12px; padding: 0; overflow: hidden;">
+          <!-- Help Center -->
+          <div class="list-item" style="border-bottom: 0.5px solid #F2F3F5;">
+            <div class="list-item-icon" style="background: #F3F4F6;">
+              <i class="fas fa-question-circle" style="color: #6B7280;"></i>
+            </div>
+            <div class="list-item-content">
+              <div class="list-item-title">帮助中心</div>
+              <div class="list-item-subtitle">常见问题与使用教程</div>
+            </div>
+            <i class="fas fa-chevron-right list-item-arrow"></i>
+          </div>
+
+          <!-- Settings -->
+          <div class="list-item" style="border-bottom: 0.5px solid #F2F3F5;">
+            <div class="list-item-icon" style="background: #F3F4F6;">
+              <i class="fas fa-cog" style="color: #6B7280;"></i>
+            </div>
+            <div class="list-item-content">
+              <div class="list-item-title">设置</div>
+              <div class="list-item-subtitle">账号安全、通知管理</div>
+            </div>
+            <i class="fas fa-chevron-right list-item-arrow"></i>
+          </div>
+
+          <!-- Contact HR -->
+          <div class="list-item">
+            <div class="list-item-icon" style="background: #F3F4F6;">
+              <i class="fas fa-headset" style="color: #6B7280;"></i>
+            </div>
+            <div class="list-item-content">
+              <div class="list-item-title">联系HR</div>
+              <div class="list-item-subtitle">求职问题咨询</div>
+            </div>
+            <i class="fas fa-chevron-right list-item-arrow"></i>
+          </div>
+        </div>
+
+        <!-- App Info -->
+        <div style="text-align: center; padding: 20px; color: #9CA3AF;">
+          <p style="font-size: 12px; margin-bottom: 4px;">腾讯校园招聘 v1.0.0</p>
+          <p style="font-size: 11px;">© 2026 Tencent. All Rights Reserved.</p>
+        </div>
+      </div>
+
+      <div style="height: 20px;"></div>
+    </div>
+
+    <!-- Tab Bar -->
+    <div class="tab-bar">
+      <div class="tab-item">
+        <i class="fas fa-home"></i>
+        <span>首页</span>
+      </div>
+      <div class="tab-item">
+        <i class="fas fa-file-alt"></i>
+        <span>简历</span>
+      </div>
+      <div class="tab-item">
+        <i class="fas fa-paper-plane"></i>
+        <span>投递</span>
+      </div>
+      <div class="tab-item">
+        <i class="fas fa-chart-line"></i>
+        <span>进度</span>
+      </div>
+      <div class="tab-item active">
+        <i class="fas fa-user"></i>
+        <span>我的</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

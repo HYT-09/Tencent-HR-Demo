@@ -1,0 +1,18 @@
+{
+  "name": "腾讯校招求职平台",
+  "short_name": "腾讯校招",
+  "description": "AI智能匹配，精准推荐腾讯校招岗位",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#2A5CFF",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>投递管理</title>
+  <link rel="stylesheet" href="../styles/app.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body style="margin: 0; padding: 20px; background: transparent;">
+  <div class="phone-frame">
+    <div class="dynamic-island"></div>
+
+    <!-- Status Bar -->
+    <div class="status-bar">
+      <span class="status-bar-time">9:41</span>
+      <div class="status-bar-icons">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C7.46 3 3.34 4.78.29 7.67c-.18.18-.29.43-.29.71 0 .28.11.53.29.71l11.29 11.29c.19.19.44.29.71.29.28 0 .53-.11.71-.29L23.71 9.09c.18-.18.29-.43.29-.71 0-.28-.11-.53-.29-.71C20.66 4.78 16.54 3 12 3z"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17 4h-3V2h-4v2H7v18h10V4zm-4 16h-2v-2h2v2zm0-4h-2V9h2v7z"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17 4h-3V2h-4v2H7v18h10V4zm-4 16h-2v-2h2v2zm0-4h-2V9h2v7z"/></svg>
+      </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+      <div class="nav-bar-left">
+        <i class="fas fa-chevron-left"></i>
+        <span>返回</span>
+      </div>
+      <span class="nav-bar-title">我的投递</span>
+      <div class="nav-bar-right"></div>
+    </div>
+
+    <!-- Screen Content -->
+    <div class="screen-content" style="background: #F8F9FA;">
+
+      <!-- Stats Overview -->
+      <div style="padding: 16px; background: white; margin-bottom: 1px;">
+        <div style="display: flex; justify-content: space-around; text-align: center;">
+          <div>
+            <div style="font-size: 24px; font-weight: 700; color: #2A5CFF;">5</div>
+            <div style="font-size: 11px; color: #6B7280; margin-top: 2px;">全部投递</div>
+          </div>
+          <div>
+            <div style="font-size: 24px; font-weight: 700; color: #34C759;">2</div>
+            <div style="font-size: 11px; color: #6B7280; margin-top: 2px;">面试中</div>
+          </div>
+          <div>
+            <div style="font-size: 24px; font-weight: 700; color: #FF9500;">3</div>
+            <div style="font-size: 11px; color: #6B7280; margin-top: 2px;">处理中</div>
+          </div>
+          <div>
+            <div style="font-size: 24px; font-weight: 700; color: #FF3B30;">1</div>
+            <div style="font-size: 11px; color: #6B7280; margin-top: 2px;">已拒绝</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Applications List -->
+      <div style="padding: 12px 16px;">
+
+        <!-- Applied Job 1 -->
+        <div style="background: white; border-radius: 16px; padding: 16px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+            <div>
+              <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+                <span style="font-size: 17px; font-weight: 700; color: #1a1a1a;">前端开发工程师</span>
+                <span class="match-tag match-tag-s">S级</span>
+              </div>
+              <p style="font-size: 13px; color: #6B7280;">深圳 · 技术工程事业群(TEG)</p>
+            </div>
+            <div style="text-align: right;">
+              <div style="font-size: 22px; font-weight: 700; color: #34C759;">92%</div>
+              <div style="font-size: 11px; color: #9CA3AF;">匹配度</div>
+            </div>
+          </div>
+
+          <!-- Interview Schedule -->
+          <div style="background: #E8F8ED; border-radius: 10px; padding: 12px; margin-bottom: 12px;">
+            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
+              <i class="fas fa-calendar-check" style="color: #34C759;"></i>
+              <span style="font-size: 14px; font-weight: 600; color: #34C759;">面试时间：2026年5月28日 14:00</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 8px; font-size: 13px; color: #374151;">
+              <i class="fas fa-map-marker-alt" style="color: #6B7280; width: 16px;"></i>
+              <span>深圳总部大厦 3楼 会议室A</span>
+            </div>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <span style="font-size: 12px; color: #9CA3AF;"><i class="fas fa-clock"></i> 投递于 2026-05-20</span>
+            <span class="status-pill status-pill-success">已获邀</span>
+          </div>
+        </div>
+
+        <!-- Applied Job 2 -->
+        <div style="background: white; border-radius: 16px; padding: 16px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+            <div>
+              <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+                <span style="font-size: 17px; font-weight: 700; color: #1a1a1a;">AI算法工程师</span>
+                <span class="match-tag match-tag-a">A级</span>
+              </div>
+              <p style="font-size: 13px; color: #6B7280;">深圳 · AI Lab</p>
+            </div>
+            <div style="text-align: right;">
+              <div style="font-size: 22px; font-weight: 700; color: #34C759;">87%</div>
+              <div style="font-size: 11px; color: #9CA3AF;">匹配度</div>
+            </div>
+          </div>
+
+          <div style="background: #E8F8ED; border-radius: 10px; padding: 12px; margin-bottom: 12px;">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <i class="fas fa-calendar-check" style="color: #34C759;"></i>
+              <span style="font-size: 14px; font-weight: 600; color: #34C759;">面试时间：2026年5月30日 10:00</span>
+            </div>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <span style="font-size: 12px; color: #9CA3AF;"><i class="fas fa-clock"></i> 投递于 2026-05-21</span>
+            <span class="status-pill status-pill-success">已获邀</span>
+          </div>
+        </div>
+
+        <!-- Applied Job 3 -->
+        <div style="background: white; border-radius: 16px; padding: 16px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+            <div>
+              <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+                <span style="font-size: 17px; font-weight: 700; color: #1a1a1a;">产品经理</span>
+                <span class="match-tag match-tag-b">B级</span>
+              </div>
+              <p style="font-size: 13px; color: #6B7280;">北京 · PCG</p>
+            </div>
+            <div style="text-align: right;">
+              <div style="font-size: 22px; font-weight: 700; color: #34C759;">81%</div>
+              <div style="font-size: 11px; color: #9CA3AF;">匹配度</div>
+            </div>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <span style="font-size: 12px; color: #9CA3AF;"><i class="fas fa-clock"></i> 投递于 2026-05-22</span>
+            <span class="status-pill status-pill-info">HR已查看</span>
+          </div>
+        </div>
+
+        <!-- Applied Job 4 -->
+        <div style="background: white; border-radius: 16px; padding: 16px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+            <div>
+              <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+                <span style="font-size: 17px; font-weight: 700; color: #1a1a1a;">后端开发工程师</span>
+                <span class="match-tag match-tag-b">B级</span>
+              </div>
+              <p style="font-size: 13px; color: #6B7280;">深圳 · CSIG</p>
+            </div>
+            <div style="text-align: right;">
+              <div style="font-size: 22px; font-weight: 700; color: #34C759;">78%</div>
+              <div style="font-size: 11px; color: #9CA3AF;">匹配度</div>
+            </div>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <span style="font-size: 12px; color: #9CA3Af;"><i class="fas fa-clock"></i> 投递于 2026-05-22</span>
+            <span class="status-pill status-pill-warning">等待HR查看</span>
+          </div>
+        </div>
+
+        <!-- Rejected Job -->
+        <div style="background: white; border-radius: 16px; padding: 16px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); opacity: 0.8;">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px;">
+            <div>
+              <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+                <span style="font-size: 17px; font-weight: 700; color: #9CA3AF;">数据分析师</span>
+                <span class="match-tag match-tag-c">C级</span>
+              </div>
+              <p style="font-size: 13px; color: #9CA3AF;">深圳 · WXG</p>
+            </div>
+            <div style="text-align: right;">
+              <div style="font-size: 22px; font-weight: 700; color: #9CA3AF;">65%</div>
+              <div style="font-size: 11px; color: #9CA3AF;">匹配度</div>
+            </div>
+          </div>
+
+          <div style="padding: 10px 12px; background: #FFF5F5; border-radius: 8px; margin-bottom: 10px;">
+            <span style="font-size: 12px; color: #2A5CFF;"><i class="fas fa-info-circle"></i> 您的简历与该岗位匹配度相对较低，暂不适合</span>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <span style="font-size: 12px; color: #9CA3AF;"><i class="fas fa-clock"></i> 投递于 2026-05-18</span>
+            <span class="status-pill status-pill-error">已拒绝</span>
+          </div>
+
+          <div style="margin-top: 10px; padding-top: 10px; border-top: 1px dashed #E5E6EB;">
+            <button style="width: 100%; padding: 10px; background: #FFF9E6; color: #FF9500; border: none; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer;">
+              <i class="fas fa-magic"></i> 查看AI回捞推荐
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="height: 20px;"></div>
+    </div>
+
+    <!-- Tab Bar -->
+    <div class="tab-bar">
+      <div class="tab-item">
+        <i class="fas fa-home"></i>
+        <span>首页</span>
+      </div>
+      <div class="tab-item">
+        <i class="fas fa-file-alt"></i>
+        <span>简历</span>
+      </div>
+      <div class="tab-item active">
+        <i class="fas fa-paper-plane"></i>
+        <span>投递</span>
+      </div>
+      <div class="tab-item">
+        <i class="fas fa-chart-line"></i>
+        <span>进度</span>
+      </div>
+      <div class="tab-item">
+        <i class="fas fa-user"></i>
+        <span>我的</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>匹配结果</title>
+  <link rel="stylesheet" href="../styles/app.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body style="margin: 0; padding: 20px; background: transparent;">
+  <div class="phone-frame">
+    <div class="dynamic-island"></div>
+
+    <!-- Status Bar -->
+    <div class="status-bar">
+      <span class="status-bar-time">9:41</span>
+      <div class="status-bar-icons">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C7.46 3 3.34 4.78.29 7.67c-.18.18-.29.43-.29.71 0 .28.11.53.29.71l11.29 11.29c.19.19.44.29.71.29.28 0 .53-.11.71-.29L23.71 9.09c.18-.18.29-.43.29-.71 0-.28-.11-.53-.29-.71C20.66 4.78 16.54 3 12 3z"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17 4h-3V2h-4v2H7v18h10V4zm-4 16h-2v-2h2v2zm0-4h-2V9h2v7z"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17 4h-3V2h-4v2H7v18h10V4zm-4 16h-2v-2h2v2zm0-4h-2V9h2v7z"/></svg>
+      </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+      <div class="nav-bar-left">
+        <i class="fas fa-chevron-left"></i>
+        <span>返回</span>
+      </div>
+      <span class="nav-bar-title">匹配结果</span>
+      <div class="nav-bar-right">
+        <i class="fas fa-redo"></i>
+      </div>
+    </div>
+
+    <!-- Screen Content -->
+    <div class="screen-content" style="background: #F8F9FA;">
+
+      <!-- Resume Summary Card -->
+      <div style="padding: 16px 16px 12px;">
+        <div class="card" style="margin: 0; background: linear-gradient(135deg, #2A5CFF, #5B7FFF); border-radius: 16px; padding: 16px;">
+          <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 14px;">
+            <div style="width: 56px; height: 56px; background: rgba(255,255,255,0.2); border-radius: 14px; display: flex; align-items: center; justify-content: center;">
+              <i class="fas fa-user-graduate" style="color: white; font-size: 24px;"></i>
+            </div>
+            <div style="flex: 1; color: white;">
+              <p style="font-size: 12px; opacity: 0.8; margin-bottom: 2px;">已解析简历</p>
+              <p style="font-size: 16px; font-weight: 600;">张三 · 北京大学</p>
+              <p style="font-size: 12px; opacity: 0.9;">计算机科学与技术 · 本科</p>
+            </div>
+          </div>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+            <span style="padding: 4px 10px; background: rgba(255,255,255,0.2); border-radius: 6px; font-size: 11px; color: white;">前端开发</span>
+            <span style="padding: 4px 10px; background: rgba(255,255,255,0.2); border-radius: 6px; font-size: 11px; color: white;">React</span>
+            <span style="padding: 4px 10px; background: rgba(255,255,255,0.2); border-radius: 6px; font-size: 11px; color: white;">数据分析</span>
+            <span style="padding: 4px 10px; background: rgba(255,255,255,0.2); border-radius: 6px; font-size: 11px; color: white;">项目经验3个</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Match Score Overview -->
+      <div style="padding: 0 16px 12px;">
+        <div style="background: white; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div style="text-align: center;">
+              <div style="font-size: 32px; font-weight: 700; color: #34C759; margin-bottom: 2px;">92<span style="font-size: 16px;">%</span></div>
+              <div style="font-size: 12px; color: #6B7280;">最高匹配度</div>
+            </div>
+            <div style="display: flex; gap: 4px; align-items: center;">
+              <span class="match-tag match-tag-s">S级</span>
+              <span style="font-size: 13px; color: #374151; font-weight: 500;">最优推荐</span>
+            </div>
+            <div style="text-align: center;">
+              <div style="font-size: 32px; font-weight: 700; color: #FF9500; margin-bottom: 2px;">3<span style="font-size: 16px;">个</span></div>
+              <div style="font-size: 12px; color: #6B7280;">匹配岗位</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Matched Jobs List -->
+      <div style="padding: 0 16px;">
+        <h3 style="font-size: 15px; font-weight: 600; color: #1a1a1a; margin-bottom: 12px;">
+          <i class="fas fa-bullseye" style="color: #2A5CFF; margin-right: 6px;"></i>为你推荐的最佳岗位
+        </h3>
+
+        <!-- Job Card 1 - S Level -->
+        <div style="background: white; border-radius: 16px; padding: 16px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); border: 1.5px solid #2A5CFF;">
+          <!-- Header -->
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+            <div style="flex: 1;">
+              <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+                <span style="font-size: 17px; font-weight: 700; color: #1a1a1a;">前端开发工程师</span>
+                <span class="match-tag match-tag-s">S级</span>
+              </div>
+              <p style="font-size: 13px; color: #6B7280;">深圳 · 技术工程事业群(TEG)</p>
+            </div>
+            <div style="text-align: right;">
+              <div style="font-size: 28px; font-weight: 700; color: #34C759; line-height: 1;">92<span style="font-size: 14px;">%</span></div>
+              <div style="font-size: 11px; color: #9CA3AF;">匹配度</div>
+            </div>
+          </div>
+
+          <!-- Match Breakdown -->
+          <div style="background: #F8F9FA; border-radius: 10px; padding: 12px; margin-bottom: 12px;">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+              <span style="font-size: 12px; color: #6B7280;">学历匹配</span>
+              <span style="font-size: 12px; font-weight: 600; color: #34C759;">30/30</span>
+            </div>
+            <div class="progress-bar" style="height: 6px; margin-bottom: 8px;">
+              <div class="progress-fill" style="width: 100%; background: #34C759;"></div>
+            </div>
+            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+              <span style="font-size: 12px; color: #6B7280;">专业匹配</span>
+              <span style="font-size: 12px; font-weight: 600; color: #34C759;">20/20</span>
+            </div>
+            <div class="progress-bar" style="height: 6px; margin-bottom: 8px;">
+              <div class="progress-fill" style="width: 100%; background: #34C759;"></div>
+            </div>
+            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+              <span style="font-size: 12px; color: #6B7280;">技能匹配</span>
+              <span style="font-size: 12px; font-weight: 600; color: #34C759;">27/30</span>
+            </div>
+            <div class="progress-bar" style="height: 6px; margin-bottom: 8px;">
+              <div class="progress-fill" style="width: 90%; background: #34C759;"></div>
+            </div>
+            <div style="display: flex; justify-content: space-between;">
+              <span style="font-size: 12px; color: #6B7280;">经历匹配</span>
+              <span style="font-size: 12px; font-weight: 600; color: #FF9500;">15/20</span>
+            </div>
+            <div class="progress-bar" style="height: 6px;">
+              <div class="progress-fill" style="width: 75%; background: #FF9500;"></div>
+            </div>
+          </div>
+
+          <!-- Match Reasons -->
+          <div style="margin-bottom: 14px;">
+            <p style="font-size: 13px; color: #374151; line-height: 1.5;">
+              <span style="color: #34C759; font-weight: 600;">匹配理由：</span>
+              您的计算机专业背景与岗位高度契合；掌握的前端技术栈(React、Vue)与招聘需求完全匹配；拥有2个互联网项目实战经验，具备独立开发能力。
+            </p>
+          </div>
+
+          <!-- Salary & Skills -->
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+            <div style="font-size: 16px; font-weight: 700; color: #2A5CFF;">35K-50K <span style="font-size: 12px; font-weight: 400; color: #9CA3AF;">/月</span></div>
+            <div style="display: flex; gap: 4px;">
+              <span style="padding: 3px 8px; background: #F0F4FF; border-radius: 4px; font-size: 10px; color: #2A5CFF;">React</span>
+              <span style="padding: 3px 8px; background: #F0F4FF; border-radius: 4px; font-size: 10px; color: #2A5CFF;">TypeScript</span>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div style="display: flex; gap: 10px;">
+            <button style="flex: 1; padding: 12px; background: #2A5CFF; color: white; border: none; border-radius: 10px; font-size: 15px; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px;">
+              <i class="fas fa-paper-plane"></i> 一键投递
+            </button>
+            <button style="width: 44px; height: 44px; background: #F3F4F6; border: none; border-radius: 10px; cursor: pointer;">
+              <i class="fas fa-heart" style="color: #6B7280;"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Job Card 2 - A Level -->
+        <div style="background: white; border-radius: 16px; padding: 16px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+            <div style="flex: 1;">
+              <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+                <span style="font-size: 17px; font-weight: 700; color: #1a1a1a;">AI算法工程师</span>
+                <span class="match-tag match-tag-a">A级</span>
+              </div>
+              <p style="font-size: 13px; color: #6B7280;">深圳 · AI Lab</p>
+            </div>
+            <div style="text-align: right;">
+              <div style="font-size: 28px; font-weight: 700; color: #34C759; line-height: 1;">87<span style="font-size: 14px;">%</span></div>
+              <div style="font-size: 11px; color: #9CA3AF;">匹配度</div>
+            </div>
+          </div>
+          <div style="margin-bottom: 14px;">
+            <p style="font-size: 13px; color: #374151; line-height: 1.5;">
+              <span style="color: #34C759; font-weight: 600;">匹配理由：</span>
+              专业背景与AI方向契合；掌握Python编程及机器学习基础，项目中涉及数据分析实践。
+            </p>
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+            <div style="font-size: 16px; font-weight: 700; color: #2A5CFF;">40K-60K <span style="font-size: 12px; font-weight: 400; color: #9CA3AF;">/月</span></div>
+            <div style="display: flex; gap: 4px;">
+              <span style="padding: 3px 8px; background: #F0F4FF; border-radius: 4px; font-size: 10px; color: #2A5CFF;">Python</span>
+              <span style="padding: 3px 8px; background: #F0F4FF; border-radius: 4px; font-size: 10px; color: #2A5CFF;">深度学习</span>
+            </div>
+          </div>
+          <div style="display: flex; gap: 10px;">
+            <button style="flex: 1; padding: 12px; background: #2A5CFF; color: white; border: none; border-radius: 10px; font-size: 15px; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px;">
+              <i class="fas fa-paper-plane"></i> 一键投递
+            </button>
+            <button style="width: 44px; height: 44px; background: #F3F4F6; border: none; border-radius: 10px; cursor: pointer;">
+              <i class="fas fa-heart" style="color: #6B7280;"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Job Card 3 - B Level -->
+        <div style="background: white; border-radius: 16px; padding: 16px; margin-bottom: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+            <div style="flex: 1;">
+              <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+                <span style="font-size: 17px; font-weight: 700; color: #1a1a1a;">产品经理</span>
+                <span class="match-tag match-tag-b">B级</span>
+              </div>
+              <p style="font-size: 13px; color: #6B7280;">北京 · PCG</p>
+            </div>
+            <div style="text-align: right;">
+              <div style="font-size: 28px; font-weight: 700; color: #34C759; line-height: 1;">81<span style="font-size: 14px;">%</span></div>
+              <div style="font-size: 11px; color: #9CA3AF;">匹配度</div>
+            </div>
+          </div>
+          <div style="margin-bottom: 14px;">
+            <p style="font-size: 13px; color: #374151; line-height: 1.5;">
+              <span style="color: #34C759; font-weight: 600;">匹配理由：</span>
+              技术背景有助于与研发团队高效沟通；在校期间有产品项目经验，具备基础产品思维。
+            </p>
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+            <div style="font-size: 16px; font-weight: 700; color: #2A5CFF;">30K-45K <span style="font-size: 12px; font-weight: 400; color: #9CA3AF;">/月</span></div>
+            <div style="display: flex; gap: 4px;">
+              <span style="padding: 3px 8px; background: #F0FFF4; border-radius: 4px; font-size: 10px; color: #34C759;">产品设计</span>
+              <span style="padding: 3px 8px; background: #F0FFF4; border-radius: 4px; font-size: 10px; color: #34C759;">沟通</span>
+            </div>
+          </div>
+          <div style="display: flex; gap: 10px;">
+            <button style="flex: 1; padding: 12px; background: #2A5CFF; color: white; border: none; border-radius: 10px; font-size: 15px; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px;">
+              <i class="fas fa-paper-plane"></i> 一键投递
+            </button>
+            <button style="width: 44px; height: 44px; background: #F3F4F6; border: none; border-radius: 10px; cursor: pointer;">
+              <i class="fas fa-heart" style="color: #6B7280;"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div style="height: 20px;"></div>
+    </div>
+
+    <!-- Tab Bar -->
+    <div class="tab-bar">
+      <div class="tab-item">
+        <i class="fas fa-home"></i>
+        <span>首页</span>
+      </div>
+      <div class="tab-item active">
+        <i class="fas fa-file-alt"></i>
+        <span>简历</span>
+      </div>
+      <div class="tab-item">
+        <i class="fas fa-paper-plane"></i>
+        <span>投递</span>
+      </div>
+      <div class="tab-item">
+        <i class="fas fa-chart-line"></i>
+        <span>进度</span>
+      </div>
+      <div class="tab-item">
+        <i class="fas fa-user"></i>
+        <span>我的</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
