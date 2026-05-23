@@ -1,0 +1,22 @@
+{
+  "name": "tencent-hr-demo",
+  "version": "1.0.0",
+  "description": "腾讯校招求职平台 - 全栈Demo",
+  "private": true,
+  "scripts": {
+    "install:server": "cd server && npm install",
+    "install:client": "cd client && npm install",
+    "build:client": "cd client && npm run build",
+    "build": "npm run install:server && npm run install:client && npm run build:client",
+    "start": "node server/src/index.js",
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm run dev\"",
+    "heroku-postbuild": "npm run build"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "cacheDirectories": [
+    "server/node_modules",
+    "client/node_modules"
+  ]
+}

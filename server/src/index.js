@@ -2,6 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
+const fs = require('fs');
 const { initDb, saveDb, all, get, run } = require('./models/database');
 const userRoutes = require('./routes/users');
 const jobRoutes = require('./routes/jobs');
@@ -23,6 +24,17 @@ app.use('/api/admin', adminRoutes);
 app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
+
+// 生产环境：serve 前端静态文件
+const clientDist = path.join(__dirname, '../../client/dist');
+if (fs.existsSync(clientDist)) {
+  app.use(express.static(clientDist));
+  // SPA 回退：所有非 /api 路由返回 index.html
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(clientDist, 'index.html'));
+  });
+  console.log('📦 已启用前端静态文件服务');
+}
 
 // 初始化数据库（异步）
 async function start() {
