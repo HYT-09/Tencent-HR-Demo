@@ -31,8 +31,9 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/api': {
-        target: 'http://localhost:3001',
-        changeOrigin: true
+        target: 'https://tencent-hr-demo-261441-7-1436282118.sh.run.tcloudbase.com',
+        changeOrigin: true,
+        secure: true
       }
     }
   }
